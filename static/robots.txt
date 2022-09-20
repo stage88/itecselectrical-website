@@ -1,0 +1,3 @@
+User-agent: *
+
+sitemap: https://itecselectrical.com.au/sitemap/sitemap-index.xml

@@ -5,23 +5,23 @@ import useSiteMetadata from '../hooks/useSiteMetadata';
 const Head: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
   const site = useSiteMetadata();
 
-  const { title, description, siteUrl, author, siteImage } = site;
+  const { title, description, longDescription, siteUrl, author, siteImage } = site;
 
   return (
     <Helmet title={title} defaultTitle={title}>
       <html lang={'en-US'} />
-      <meta name='description' content={description} />
+      <meta name='description' content={longDescription} />
       <meta name='image' content={siteImage} />
       <meta property='og:title' content={title} />
       <meta property='og:url' content={siteUrl} />
-      <meta property='og:description' content={description} />
+      <meta property='og:description' content={longDescription} />
       <meta property='og:image' content={siteImage} />
       <meta property='og:type' content='website' />
       <meta property='og:image:alt' content={description} />
       <meta name='twitter:card' content='summary_large_image' />
       <meta name='twitter:title' content={title} />
       <meta name='twitter:url' content={siteUrl} />
-      <meta name='twitter:description' content={description} />
+      <meta name='twitter:description' content={longDescription} />
       <meta name='twitter:image' content={siteImage} />
       <meta name='twitter:image:alt' content={description} />
       <meta name='twitter:creator' content={author} />

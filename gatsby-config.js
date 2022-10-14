@@ -1,9 +1,11 @@
 /* eslint-disable max-len */
 module.exports = {
   siteMetadata: {
-    title: 'ITECS Electrical - Quality electrical services.',
-    name: 'ITECS Electrical',
-    description: 'Quality electrical services with professional experience.',
+    title: 'ITECS Electrical - Quality electrical services',
+    name: 'ITECS Electrical Services',
+    companyName: 'ITECS Electrical Services Pty Ltd',
+    description: 'Quality electrical services with professional experience',
+    longDescription: 'ITECS Electrical Services are leaders in providing quality electrical services for all kinds of residential, commercial, and rural projects. Servicing Canberra, Queanbeyan, and surrounding areas',
     siteUrl: 'https://itecselectrical.com.au/',
     author: 'Sam Ilic',
     constactEmail: 'info@itecselectrical.com.au',

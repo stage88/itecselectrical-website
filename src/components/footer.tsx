@@ -5,16 +5,20 @@ const Footer: React.FC = () => {
   const { title, author, sourceUrl, authorUrl } = useSiteMetadata();
 
   return (
-    <div id='footer'>
-      <div className='inner'>
-        <ul className='copyright'>
-          <li>&copy; {new Date().getFullYear()} by {title}</li>
-          <li>
-            <a href={sourceUrl}>Theme</a> by <a href={authorUrl}>{author}</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <section className='u-backlink u-clearfix u-grey-80'>
+      <p className='u-text'>
+        <span>&copy; {new Date().getFullYear()} by {title}</span>
+      </p><br />
+      <a className='u-link' href={sourceUrl} target='_blank'>
+        <span>Theme</span>
+      </a>
+      <p className='u-text'>
+        <span>&nbsp;&nbsp;created by&nbsp;&nbsp;</span>
+      </p>
+      <a className='u-link' href={authorUrl} target='_blank'>
+        <span>{author}</span>
+      </a>
+    </section>
   );
 };
 

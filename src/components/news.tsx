@@ -1,8 +1,8 @@
 import React from 'react';
 
-import img_ed81ebf732fec2e03d496bca9314f258 from '../images/ed81ebf732fec2e03d496bca9314f258.png';
-import img_fcc6b22e1ce851ad1ffee68a386f9d89 from '../images/fcc6b22e1ce851ad1ffee68a386f9d89.png';
-import img_47e9872033581723cf1877c5bd01f314 from '../images/47e9872033581723cf1877c5bd01f314.png';
+import img_person_design_1 from '../images/person-design-1.png';
+import img_building_1 from '../images/building-1.png';
+import img_tools_1 from '../images/tools-1.png';
 
 const News: React.FC = () => {
   return (
@@ -20,7 +20,7 @@ const News: React.FC = () => {
             <div className='u-layout-row'>
               <div className='u-align-left u-container-style u-expand-resize u-layout-cell u-left-cell u-similar-fill u-size-20 u-size-20-md u-layout-cell-1'>
                 <div className='u-container-layout'>
-                  <img className='u-expanded-width u-image u-image-1' src={img_ed81ebf732fec2e03d496bca9314f258} />
+                  <img className='u-expanded-width u-image u-image-1' src={img_person_design_1} />
                   <h3 className='u-heading-font u-text u-text-3'>GREAT PROJECTS</h3>
                   <h4 className='u-heading-font u-text u-text-grey u-text-4'>19 March 2018 / Super User</h4>
                   <p className='u-text u-text-font u-text-5'>
@@ -33,7 +33,7 @@ const News: React.FC = () => {
               </div>
               <div className='u-align-left u-container-style u-layout-cell u-similar-fill u-size-20 u-size-20-md u-layout-cell-2'>
                 <div className='u-container-layout'>
-                  <img className='u-expanded-width u-image u-image-2' src={img_fcc6b22e1ce851ad1ffee68a386f9d89} />
+                  <img className='u-expanded-width u-image u-image-2' src={img_building_1} />
                   <h3 className='u-heading-font u-text u-text-6'>GREAT PROJECTS</h3>
                   <h4 className='u-heading-font u-text u-text-grey u-text-7'>19 March 2018 / Super User</h4>
                   <p className='u-text u-text-font u-text-8'>
@@ -46,7 +46,7 @@ const News: React.FC = () => {
               </div>
               <div className='u-align-left u-container-style u-layout-cell u-right-cell u-similar-fill u-size-20 u-size-20-md u-layout-cell-3'>
                 <div className='u-container-layout'>
-                  <img className='u-expanded-width u-image u-image-3' src={img_47e9872033581723cf1877c5bd01f314} />
+                  <img className='u-expanded-width u-image u-image-3' src={img_tools_1} />
                   <h3 className='u-heading-font u-text u-text-9'>GREAT PROJECTS</h3>
                   <h4 className='u-heading-font u-text u-text-grey u-text-10'>19 March 2018 / Super User</h4>
                   <p className='u-text u-text-font u-text-11'>

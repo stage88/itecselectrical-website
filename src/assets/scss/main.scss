@@ -1,2 +1,89 @@
 @import 'site';
 @import 'page';
+
+.header-description {
+  padding-bottom: 60px;
+}
+
+.service-container {
+  padding: 0 22px;
+}
+
+.u-section-2 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('/images/beard-1.jpeg');
+  background-position: 50% 50%;
+}
+
+.u-section-6 .u-image-1 {
+  background-image: url('/images/project-1.jpeg');
+  background-position: 50% 50%;
+  min-height: 287px;
+}
+.u-section-6 .u-image-2 {
+  background-image: url('/images/project-2.jpeg');
+  background-position: 50% 50%;
+  min-height: 287px;
+}
+.u-section-6 .u-image-3 {
+  background-image: url('/images/project-3.jpeg');
+  background-position: 50% 50%;
+  min-height: 287px;
+}
+.u-section-6 .u-image-4 {
+  background-image: url('/images/project-4.jpeg');
+  background-position: 50% 50%;
+  min-height: 287px;
+}
+.u-section-6 .u-image-5 {
+  background-image: url('/images/project-5.jpeg');
+  background-position: 50% 50%;
+  min-height: 287px;
+}
+.u-section-6 .u-image-6 {
+  background-image: url('/images/project-6.jpeg');
+  background-position: 50% 50%;
+  min-height: 287px;
+}
+.u-section-6 .u-image-7 {
+  min-height: 287px;
+  background-image: url('/images/project-7.jpeg');
+  background-position: 50% 50%;
+}
+.u-section-6 .u-image-8 {
+  min-height: 287px;
+  background-image: url('/images/project-8.jpeg');
+  background-position: 50% 50%;
+}
+
+.u-section-7 .u-layout-cell-1 {
+  min-height: 433px;
+  background-image: url('/images/world-map.png');
+}
+
+.u-section-4 .u-image-1 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('/images/people-design.png');
+  min-height: 312px;
+  background-position: 50% 50%;
+}
+
+.u-section-4 .u-image-2 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('/images/indoor-3.png');
+  min-height: 312px;
+  background-position: 50% 50%;
+}
+
+.u-section-4 .u-image-3 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('/images/pool.jpg');
+  min-height: 312px;
+  background-position: 50% 50%;
+}
+
+.u-section-8 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url('/images/indoor-1.jpeg');
+  background-position: 50% 50%;
+}

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import img_493c4ba9faffae1d4d634b42d393f786 from '../images/493c4ba9faffae1d4d634b42d393f786.png';
-import img_cc6434ba828bd2405bed7e73c8dea9b3 from '../images/cc6434ba828bd2405bed7e73c8dea9b3.png';
-import img_2330280839f11746e2cec88600af8050 from '../images/2330280839f11746e2cec88600af8050.png';
+import img_person_1 from '../images/person-1.png';
+import img_person_3 from '../images/person-3.png';
+import img_person_2 from '../images/person-2.png';
 
 const Testemonials: React.FC = () => {
   return (
@@ -25,7 +25,7 @@ const Testemonials: React.FC = () => {
                       <p className='u-align-center u-text u-text-font u-text-3'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus eleifend. Nullam ornare sapien.
                       </p>
-                      <img src={img_493c4ba9faffae1d4d634b42d393f786} className='u-image u-image-default u-image-1' />
+                      <img src={img_person_1} className='u-image u-image-default u-image-1' />
                     </div>
                   </div>
                   <h3 className='u-align-center u-heading-font u-text u-text-4'>MIKE ANGELS</h3>
@@ -39,7 +39,7 @@ const Testemonials: React.FC = () => {
                       <p className='u-align-center u-text u-text-font u-text-6'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus eleifend. Nullam ornare sapien.
                       </p>
-                      <img src={img_cc6434ba828bd2405bed7e73c8dea9b3} className='u-image u-image-default u-image-2' />
+                      <img src={img_person_3} className='u-image u-image-default u-image-2' />
                     </div>
                   </div>
                   <h3 className='u-align-center-md u-align-center-sm u-align-center-xs u-heading-font u-text u-text-7'>CARL OSWAL</h3>
@@ -55,7 +55,7 @@ const Testemonials: React.FC = () => {
                       <p className='u-align-center u-text u-text-font u-text-9'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus eleifend. Nullam ornare sapien.
                       </p>
-                      <img src={img_2330280839f11746e2cec88600af8050} className='u-image u-image-default u-image-3' />
+                      <img src={img_person_2} className='u-image u-image-default u-image-3' />
                     </div>
                   </div>
                   <h3 className='u-align-center-md u-align-center-sm u-align-center-xs u-heading-font u-text u-text-10'>MARK SMITH</h3>

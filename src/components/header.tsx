@@ -1,7 +1,7 @@
 import React from 'react';
 
 import useSiteMetadata from '../hooks/useSiteMetadata';
-import img_e36e61f2185bd84c29cebb9e46a4df90 from '../images/e36e61f2185bd84c29cebb9e46a4df90.png';
+import img_electrician_1 from '../images/electrician-1.png';
 
 const Header: React.FC = () => {
   const { companyName, description, longDescription } = useSiteMetadata();
@@ -14,7 +14,7 @@ const Header: React.FC = () => {
             <h2 className='u-heading-font u-text u-text-palette-1-base u-text-1'>{description}</h2>
             <h1 className='u-heading-font u-text u-text-2'>{companyName}</h1>
             <div className='u-border-3 u-border-palette-1-base u-line u-line-horizontal u-line-1'></div>
-            <p className='u-text u-text-font u-text-3'>{longDescription}.</p>
+            <p className='u-text u-text-font u-text-3 header-description'>{longDescription}.</p>
             {/* <a href='#' className='u-border-radius-4 u-btn u-btn-round u-button-style u-custom u-palette-1-base u-text-white u-btn-1'>
               our portfolio
             </a>
@@ -23,7 +23,7 @@ const Header: React.FC = () => {
             </a> */}
           </div>
         </div>
-        <img src={img_e36e61f2185bd84c29cebb9e46a4df90} className='u-hidden-xs u-image u-image-default u-image-1' />
+        <img src={img_electrician_1} className='u-hidden-xs u-image u-image-default u-image-1' />
       </div>
     </section>
   );

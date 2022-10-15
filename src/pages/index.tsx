@@ -18,13 +18,13 @@ const IndexPage = () => {
       <Welcome />
       <Services />
       <Projects />
-      <World />
+      {/* <World />
       <Counts />
       <Working />
       <Testemonials />
       <Clients />
       <News />
-      <Buy />
+      <Buy /> */}
     </Layout>
   );
 };

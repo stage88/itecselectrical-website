@@ -8,11 +8,11 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <>
       <Head />
-      <body className='u-backlink-hidden u-body'>
+      <section className='u-backlink-hidden u-body'>
         <Header />
         {children}
         <Footer />
-      </body>
+      </section>
     </>
   );
 };

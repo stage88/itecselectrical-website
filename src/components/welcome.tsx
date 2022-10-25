@@ -27,17 +27,15 @@ const Welcome: React.FC = () => {
                   <p className='u-text u-text-font u-text-4'>
                     {name} is a Canberra / Queanbeyan operated business established in 1993. We provide services for Commercial, Industrial,
                     Rural and Domestic electrical repairs as well as new installations and upgrades in Canberra, Queanbeyan, and surrounding
-                    areas. We also provide security surveillance, data, and telephone services. 
+                    areas. We also provide security surveillance, data, and telephone services.
                     <br />
                     <br />
-                    {name} is Level 2 authorised with Essential
-                    Energy providing metering and underground connections to the premises. All our work is guaranteed and of high standard
-                    that complies with the latest Australian Standards.
+                    {name} is Level 2 authorised with Essential Energy providing metering and underground connections to the premises. All
+                    our work is guaranteed and of high standard that complies with the latest Australian Standards.
                     <br />
                     <br />
-                    We
-                    pride ourselves on completing jobs quickly, efficiently, and seamlessly from start to finish, leaving you with the peace
-                    of mind of a job well done.
+                    We pride ourselves on completing jobs quickly, efficiently, and seamlessly from start to finish, leaving you with the
+                    peace of mind of a job well done.
                     <br />
                     <br />
                     Our highly-trained, electricians have years of experience and are ready to assess your complete electrical needs 24
@@ -45,18 +43,21 @@ const Welcome: React.FC = () => {
                     right solution for you, fast the first time.
                     <br />
                     <br />
+                  </p>
+                  <span className='u-text u-text-font u-text-4'>
                     We specialise in:
-                    <ul>
+                    <ul className='u-text u-text-font u-text-4' style={{ marginTop: 0 }}>
                       <li>Electrical and security system requirements</li>
                       <li>Residential electrical fit outs for new builds or renovations</li>
                       <li>Commercial fit outs & new designs</li>
                       <li>Residential and commercial maintenance across Canberra / Queanbeyan</li>
                       <li>A full guarantee on all workmanship and products</li>
                     </ul>
-                  </p>
-                  {/* <a href='#' className='u-border-radius-4 u-btn u-btn-round u-button-style u-custom u-palette-1-base u-text-white u-btn-1'>
-                    read more
-                  </a> */}
+                  </span>
+
+                  <a href='#contact-us' className='u-border-radius-4 u-btn u-btn-round u-button-style u-custom u-palette-1-base u-text-white u-btn-1'>
+                    Contact Us
+                  </a>
                 </div>
               </div>
             </div>

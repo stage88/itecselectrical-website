@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
   const { companyName, constactEmail, mobile } = useSiteMetadata();
 
   return (
-    <section className='u-clearfix u-white u-section-7' id='contact-us'>
+    <section className='u-clearfix u-white u-section-7'>
       <div className='u-clearfix u-sheet u-sheet-1'>
         <div className='u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1'>
           <div className='u-layout'>
@@ -20,12 +20,12 @@ const Contact: React.FC = () => {
               </div>
               <div className='u-container-style u-layout-cell u-right-cell u-similar-fill u-size-30 u-layout-cell-2'>
                 <div className='u-container-layout u-valign-middle'>
-                  <h3 className='u-heading-font u-text u-text-palette-1-base u-text-1'>Contact Us</h3>
+                  <h3 className='u-heading-font u-text u-text-palette-1-base u-text-1' id='contact-us'>Contact Us</h3>
                   <h2 className='u-heading-font u-text u-text-2'>Our Contact Details</h2>
                   <div className='u-border-3 u-border-palette-1-base u-line u-line-horizontal u-line-1'></div>
                   <img className='u-image' src={img_logo} style={{ marginTop: '36px', width: 'max-content' }} />
                   <p className='u-text u-text-font u-text-3'>
-                    Ivan - Mobile: <a href={`tel:+${mobile}`} style={{ color: '#000' }}>{mobile}</a>
+                    Ivan - Mobile: <a href={`tel:${mobile}`} style={{ color: '#000' }}>{mobile}</a>
                   </p>
                   <p className='u-text u-text-font u-text-3'>
                   {companyName} <br />

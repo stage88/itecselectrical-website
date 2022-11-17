@@ -38,9 +38,9 @@ const Welcome: React.FC = () => {
                     peace of mind of a job well done.
                     <br />
                     <br />
-                    Our highly-trained, electricians have years of experience and are ready to assess your complete electrical needs 24
-                    hours a day. No matter how big or small your job is, from powerpoint installation to entire black outs, we can find the
-                    right solution for you, fast the first time.
+                    Our highly-trained, electricians have years of experience and are ready to assess your complete electrical needs. No
+                    matter how big or small your job is, from powerpoint installation to entire black outs, we can find the right solution
+                    for you, fast the first time.
                     <br />
                     <br />
                   </p>
@@ -55,7 +55,10 @@ const Welcome: React.FC = () => {
                     </ul>
                   </span>
 
-                  <a href='#contact-us' className='u-border-radius-4 u-btn u-btn-round u-button-style u-custom u-palette-1-base u-text-white u-btn-1'>
+                  <a
+                    href='#contact-us'
+                    className='u-border-radius-4 u-btn u-btn-round u-button-style u-custom u-palette-1-base u-text-white u-btn-1'
+                  >
                     Contact Us
                   </a>
                 </div>

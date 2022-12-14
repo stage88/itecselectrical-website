@@ -29,7 +29,7 @@ const Contact: React.FC = () => {
                     <img
                       className='u-image'
                       src={img_logo}
-                      style={{ maxWidth: '400px', width: 'max-content' }}
+                      style={{ maxWidth: '200px', width: 'max-content' }}
                     />
                   </p>
                   <p className='u-text u-text-font u-text-3'>

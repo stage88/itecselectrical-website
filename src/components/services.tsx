@@ -79,7 +79,7 @@ const Services: React.FC = () => {
         <div className='u-clearfix u-sheet u-sheet-1'>
           <div className='u-align-center u-container-style u-group u-similar-fill u-group-1'>
             <div className='u-container-layout u-valign-middle u-container-layout-1'>
-              <h3 className='u-heading-font u-text u-text-palette-1-base u-text-1'>WHAT WE DO</h3>
+              <h3 className='u-heading-font u-text u-text-palette-1-base u-text-1'>What We Do</h3>
               <h2 className='u-heading-font u-text u-text-2'>OUR SERVICES</h2>
               <div className='u-border-3 u-border-palette-1-base u-line u-line-horizontal u-line-1'></div>
             </div>

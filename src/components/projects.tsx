@@ -5,7 +5,7 @@ const Projects: React.FC = () => {
     <section className='u-clearfix u-palette-2-base u-section-6' id='sec-9285'>
       <div className='u-align-center u-container-style u-group u-similar-fill u-group-1'>
         <div className='u-container-layout u-valign-middle u-container-layout-1'>
-          <h3 className='u-heading-font u-text u-text-palette-1-base u-text-1'>PORTFOLIO</h3>
+          <h3 className='u-heading-font u-text u-text-palette-1-base u-text-1'>Portfolio</h3>
           <h2 className='u-heading-font u-text u-text-2'>RECENT PROJECTS</h2>
           <div className='u-border-3 u-border-palette-1-base u-line u-line-horizontal u-line-1'></div>
         </div>

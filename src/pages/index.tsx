@@ -6,7 +6,7 @@ import Services from '../components/services';
 import Projects from '../components/projects';
 // import World from '../components/world';
 // import Counts from '../components/counts';
-// import Working from '../components/working';
+import Working from '../components/working';
 // import Testemonials from '../components/testemonials';
 // import Clients from '../components/clients';
 // import News from '../components/news';
@@ -20,13 +20,13 @@ const IndexPage = () => {
       <Services />
       <Projects />
       <Contact />
-      {/* <World />
-      <Counts />
+      {/* <World /> */}
+      {/* <Counts /> */}
       <Working />
-      <Testemonials />
-      <Clients />
-      <News />
-      <Buy /> */}
+      {/* <Testemonials /> */}
+      {/* <Clients /> */}
+      {/* <News /> */}
+      {/* <Buy /> */}
     </Layout>
   );
 };

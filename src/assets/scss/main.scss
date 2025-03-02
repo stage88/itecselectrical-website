@@ -1,5 +1,5 @@
-@import 'site';
-@import 'page';
+@use 'site';
+@use 'page';
 
 .header-description {
   padding-bottom: 60px;

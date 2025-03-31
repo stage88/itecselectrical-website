@@ -1,8 +1,6 @@
 import React from 'react';
 import useSiteMetadata from '../hooks/useSiteMetadata';
 
-import img_world_map from '../images/world-map.png';
-
 const World: React.FC = () => {
   const { name, description, longDescription } = useSiteMetadata();
 
@@ -14,7 +12,7 @@ const World: React.FC = () => {
             <div className='u-layout-row'>
               <div className='u-align-center-md u-container-style u-expand-resize u-layout-cell u-left-cell u-similar-fill u-size-30 u-white u-layout-cell-1'>
                 <div className='u-container-layout u-valign-middle-md u-valign-middle-sm u-container-layout-1'>
-                  <img className='u-expanded-width-xs u-image u-image-1' src={img_world_map} />
+                  <img className='u-expanded-width-xs u-image u-image-1' src='/images/world-map.png' alt='World Map' />
                 </div>
               </div>
               <div className='u-container-style u-layout-cell u-right-cell u-similar-fill u-size-30 u-layout-cell-2'>

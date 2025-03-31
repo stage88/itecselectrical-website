@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import useSiteMetadata from '../hooks/useSiteMetadata';
 
 const Head: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
@@ -8,8 +7,8 @@ const Head: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
   const { title, description, longDescription, siteUrl, author, siteImage } = site;
 
   return (
-    <Helmet title={title} defaultTitle={title}>
-      <html lang={'en-US'} />
+    <>
+      <title>{title}</title>
       <meta name='description' content={longDescription} />
       <meta name='image' content={siteImage} />
       <meta property='og:title' content={title} />
@@ -28,13 +27,8 @@ const Head: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
       <link rel='icon' type='image/png' href='/favicon.ico' />
       <link rel='apple-touch-icon' href='/favicon.ico' />
 
-      <link
-        rel='stylesheet'
-        href='https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i'
-      />
-
       {children}
-    </Helmet>
+    </>
   );
 };
 

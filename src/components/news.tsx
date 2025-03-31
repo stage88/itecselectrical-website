@@ -1,9 +1,5 @@
 import React from 'react';
 
-import img_person_design_1 from '../images/person-design-1.png';
-import img_building_1 from '../images/building-1.png';
-import img_tools_1 from '../images/tools-1.png';
-
 const News: React.FC = () => {
   return (
     <section className='u-clearfix u-white u-section-12' id='sec-0e4e'>
@@ -20,11 +16,18 @@ const News: React.FC = () => {
             <div className='u-layout-row'>
               <div className='u-align-left u-container-style u-expand-resize u-layout-cell u-left-cell u-similar-fill u-size-20 u-size-20-md u-layout-cell-1'>
                 <div className='u-container-layout'>
-                  <img className='u-expanded-width u-image u-image-1' src={img_person_design_1} />
+                  <img
+                    className='u-expanded-width u-image u-image-1'
+                    src='/images/person-design-1.png'
+                    alt='Person'
+                  />
                   <h3 className='u-heading-font u-text u-text-3'>GREAT PROJECTS</h3>
-                  <h4 className='u-heading-font u-text u-text-grey u-text-4'>19 March 2018 / Super User</h4>
+                  <h4 className='u-heading-font u-text u-text-grey u-text-4'>
+                    19 March 2018 / Super User
+                  </h4>
                   <p className='u-text u-text-font u-text-5'>
-                    Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.
+                    Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc
+                    justo sagittis suscipit ultrices.
                   </p>
                   <a href='#' className='u-border-1 u-custom u-link u-text-black u-link-1'>
                     read more
@@ -33,11 +36,18 @@ const News: React.FC = () => {
               </div>
               <div className='u-align-left u-container-style u-layout-cell u-similar-fill u-size-20 u-size-20-md u-layout-cell-2'>
                 <div className='u-container-layout'>
-                  <img className='u-expanded-width u-image u-image-2' src={img_building_1} />
+                  <img
+                    className='u-expanded-width u-image u-image-2'
+                    src='/images/building-1.png'
+                    alt='Building'
+                  />
                   <h3 className='u-heading-font u-text u-text-6'>GREAT PROJECTS</h3>
-                  <h4 className='u-heading-font u-text u-text-grey u-text-7'>19 March 2018 / Super User</h4>
+                  <h4 className='u-heading-font u-text u-text-grey u-text-7'>
+                    19 March 2018 / Super User
+                  </h4>
                   <p className='u-text u-text-font u-text-8'>
-                    Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.
+                    Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc
+                    justo sagittis suscipit ultrices.
                   </p>
                   <a href='#' className='u-border-1 u-custom u-link u-text-black u-link-2'>
                     read more
@@ -46,11 +56,18 @@ const News: React.FC = () => {
               </div>
               <div className='u-align-left u-container-style u-layout-cell u-right-cell u-similar-fill u-size-20 u-size-20-md u-layout-cell-3'>
                 <div className='u-container-layout'>
-                  <img className='u-expanded-width u-image u-image-3' src={img_tools_1} />
+                  <img
+                    className='u-expanded-width u-image u-image-3'
+                    src='/images/tools-1.png'
+                    alt='Tools'
+                  />
                   <h3 className='u-heading-font u-text u-text-9'>GREAT PROJECTS</h3>
-                  <h4 className='u-heading-font u-text u-text-grey u-text-10'>19 March 2018 / Super User</h4>
+                  <h4 className='u-heading-font u-text u-text-grey u-text-10'>
+                    19 March 2018 / Super User
+                  </h4>
                   <p className='u-text u-text-font u-text-11'>
-                    Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.
+                    Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc
+                    justo sagittis suscipit ultrices.
                   </p>
                   <a href='#' className='u-border-1 u-custom u-link u-text-black u-link-3'>
                     read more

@@ -2,7 +2,9 @@ import React from 'react';
 
 const Counts: React.FC = () => {
   return (
-    <section className='u-clearfix u-image u-shading u-typography-Normal--Counter u-white u-section-8' id='sec-08b3'>
+    <section
+      className='u-clearfix u-image u-shading u-typography-Normal--Counter u-white u-section-8'
+      id='sec-08b3'>
       <div className='u-clearfix u-sheet u-sheet-1'>
         <div className='u-clearfix u-layout-wrap u-layout-wrap-1'>
           <div className='u-layout'>
@@ -13,8 +15,7 @@ const Counts: React.FC = () => {
                     className='u-text u-text-palette-1-base u-text-1'
                     data-animation-name='counter'
                     data-animation-event='scroll'
-                    data-animation-duration='3000'
-                  >
+                    data-animation-duration='3000'>
                     8 650
                   </h3>
                   <p className='u-text u-text-2' style={{ color: '#fff' }}>
@@ -29,8 +30,7 @@ const Counts: React.FC = () => {
                     className='u-text u-text-palette-1-base u-text-3'
                     data-animation-name='counter'
                     data-animation-event='scroll'
-                    data-animation-duration='3000'
-                  >
+                    data-animation-duration='3000'>
                     2 500
                   </h3>
                   <p className='u-text u-text-4' style={{ color: '#fff' }}>
@@ -45,8 +45,7 @@ const Counts: React.FC = () => {
                     className='u-text u-text-palette-1-base u-text-5'
                     data-animation-name='counter'
                     data-animation-event='scroll'
-                    data-animation-duration='3000'
-                  >
+                    data-animation-duration='3000'>
                     1 500
                   </h3>
                   <p className='u-text u-text-6' style={{ color: '#fff' }}>
@@ -61,8 +60,7 @@ const Counts: React.FC = () => {
                     className='u-text u-text-palette-1-base u-text-7'
                     data-animation-name='counter'
                     data-animation-event='scroll'
-                    data-animation-duration='3000'
-                  >
+                    data-animation-duration='3000'>
                     9 000
                   </h3>
                   <p className='u-text u-text-8' style={{ color: '#fff' }}>

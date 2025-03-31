@@ -1902,35 +1902,43 @@
 
 @-webkit-keyframes flip {
   from {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, -360deg);
     transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
 
   40% {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -190deg);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
 
   50% {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -170deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
   80% {
-    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
-    transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
   to {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
     transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
@@ -1939,35 +1947,43 @@
 
 @keyframes flip {
   from {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, -360deg);
     transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
 
   40% {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -190deg);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
 
   50% {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -170deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
   80% {
-    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
-    transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
   to {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
     transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
@@ -3965,7 +3981,9 @@ a {
   background-clip: padding-box;
   border: none;
   border-radius: 3px;
-  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition:
+    border-color ease-in-out 0.15s,
+    box-shadow ease-in-out 0.15s;
   background-color: transparent;
   color: inherit;
 }
@@ -12544,7 +12562,9 @@ section.u-image,
   cursor: pointer;
   border: 0;
   opacity: 1;
-  transition: opacity 800ms, height 0s;
+  transition:
+    opacity 800ms,
+    height 0s;
   transition-delay: 0s, 0s;
 }
 .u-video-poster:before,
@@ -14977,14 +14997,19 @@ blockquote .small:before {
   .u-pagination .u-pagination-item.active:first-child + .u-pagination-item {
     display: inline-block;
   }
-  .u-pagination.responsive-style1 .u-pagination-item:not(.active) + .u-pagination-item:nth-last-child(4),
+  .u-pagination.responsive-style1
+    .u-pagination-item:not(.active)
+    + .u-pagination-item:nth-last-child(4),
   .u-pagination.responsive-style1 .u-pagination-item.prev + .active + .u-pagination-item {
     display: inline-block;
   }
   .u-pagination.responsive-style1 .u-pagination-item.active ~ .u-pagination-item:nth-last-child(4) {
     display: none;
   }
-  .u-pagination.responsive-style2 .u-pagination-item.active:first-child + .u-pagination-item + .u-pagination-item {
+  .u-pagination.responsive-style2
+    .u-pagination-item.active:first-child
+    + .u-pagination-item
+    + .u-pagination-item {
     display: inline-block;
   }
   .u-pagination.responsive-style2 .u-pagination-item.active ~ .u-pagination-item:nth-last-child(3) {

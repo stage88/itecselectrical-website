@@ -39,11 +39,11 @@ const Services: React.FC = () => {
                   <div className='u-border-3 u-border-palette-1-base u-line u-line-horizontal u-line-2'></div>
                   <p className='u-text u-text-font u-text-4'>
                     Understanding how you will use each space in your new home is the key to providing the right electrical solutions to
-                    suit your needs. We will prompt you to consider "What will you do in this room?" and "How you will you live in the
-                    space?"
+                    suit your needs. We will prompt you to consider &quot;What will you do in this room?&quot; and &quot;How you will you live in the
+                    space?&quot;
                   </p>
                   <p className='u-text u-text-font u-text-4'>
-                    It's these important discussions that are critical to addressing and providing you with the best electrical solutions
+                    It&apos;s these important discussions that are critical to addressing and providing you with the best electrical solutions
                     for your new home.
                   </p>
                   <p className='u-text u-text-font u-text-4'>
@@ -62,7 +62,7 @@ const Services: React.FC = () => {
                     retaining wall lighting to safety lighting and much more.
                   </p>
                   <p className='u-text u-text-font u-text-6'>
-                    In addition, if you're in need of outdoor electrical work to enhance your landscaping, we can assist with the supply of
+                    In addition, if you&apos;re in need of outdoor electrical work to enhance your landscaping, we can assist with the supply of
                     electricity to your alfresco area, garden shed, as well as strategic lighting for both the front and back of your home.
                   </p>
                   <p className='u-text u-text-font u-text-6'>

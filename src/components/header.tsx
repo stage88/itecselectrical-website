@@ -1,7 +1,6 @@
 import React from 'react';
 
 import useSiteMetadata from '../hooks/useSiteMetadata';
-import img_electrician_1 from '../images/electrician-1.png';
 
 const Header: React.FC = () => {
   const { companyName, description, longDescription } = useSiteMetadata();
@@ -23,7 +22,7 @@ const Header: React.FC = () => {
             </a> */}
           </div>
         </div>
-        <img src={img_electrician_1} className='u-hidden-xs u-image u-image-default u-image-1' />
+        <img src='/images/electrician-1.png' alt='Electrician' className='u-hidden-xs u-image u-image-default u-image-1' />
       </div>
     </section>
   );

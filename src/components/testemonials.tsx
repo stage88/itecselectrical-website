@@ -1,9 +1,5 @@
 import React from 'react';
 
-import img_person_1 from '../images/person-1.png';
-import img_person_3 from '../images/person-3.png';
-import img_person_2 from '../images/person-2.png';
-
 const Testemonials: React.FC = () => {
   return (
     <section className='u-clearfix u-palette-2-base u-section-10' id='sec-a320'>
@@ -23,13 +19,20 @@ const Testemonials: React.FC = () => {
                   <div className='u-align-center-lg u-align-center-md u-border-2 u-border-grey u-container-style u-group u-group-2'>
                     <div className='u-container-layout u-container-layout-3'>
                       <p className='u-align-center u-text u-text-font u-text-3'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus eleifend. Nullam ornare sapien.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida
+                        cursus eleifend. Nullam ornare sapien.
                       </p>
-                      <img src={img_person_1} className='u-image u-image-default u-image-1' />
+                      <img
+                        src='/images/person-1.png'
+                        alt='Person'
+                        className='u-image u-image-default u-image-1'
+                      />
                     </div>
                   </div>
                   <h3 className='u-align-center u-heading-font u-text u-text-4'>MIKE ANGELS</h3>
-                  <h4 className='u-align-center u-heading-font u-text u-text-palette-1-base u-text-5'>Architect</h4>
+                  <h4 className='u-align-center u-heading-font u-text u-text-palette-1-base u-text-5'>
+                    Architect
+                  </h4>
                 </div>
               </div>
               <div className='u-align-center-lg u-align-center-xl u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-2'>
@@ -37,12 +40,19 @@ const Testemonials: React.FC = () => {
                   <div className='u-border-2 u-border-grey u-container-style u-group u-group-3'>
                     <div className='u-container-layout u-container-layout-5'>
                       <p className='u-align-center u-text u-text-font u-text-6'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus eleifend. Nullam ornare sapien.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida
+                        cursus eleifend. Nullam ornare sapien.
                       </p>
-                      <img src={img_person_3} className='u-image u-image-default u-image-2' />
+                      <img
+                        src='/images/person-3.png'
+                        alt='Person'
+                        className='u-image u-image-default u-image-2'
+                      />
                     </div>
                   </div>
-                  <h3 className='u-align-center-md u-align-center-sm u-align-center-xs u-heading-font u-text u-text-7'>CARL OSWAL</h3>
+                  <h3 className='u-align-center-md u-align-center-sm u-align-center-xs u-heading-font u-text u-text-7'>
+                    CARL OSWAL
+                  </h3>
                   <h4 className='u-align-center-md u-align-center-sm u-align-center-xs u-heading-font u-text u-text-palette-1-base u-text-8'>
                     Builder
                   </h4>
@@ -53,12 +63,19 @@ const Testemonials: React.FC = () => {
                   <div className='u-border-2 u-border-grey u-container-style u-group u-group-4'>
                     <div className='u-container-layout u-container-layout-7'>
                       <p className='u-align-center u-text u-text-font u-text-9'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus eleifend. Nullam ornare sapien.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida
+                        cursus eleifend. Nullam ornare sapien.
                       </p>
-                      <img src={img_person_2} className='u-image u-image-default u-image-3' />
+                      <img
+                        src='/images/person-2.png'
+                        alt='Person'
+                        className='u-image u-image-default u-image-3'
+                      />
                     </div>
                   </div>
-                  <h3 className='u-align-center-md u-align-center-sm u-align-center-xs u-heading-font u-text u-text-10'>MARK SMITH</h3>
+                  <h3 className='u-align-center-md u-align-center-sm u-align-center-xs u-heading-font u-text u-text-10'>
+                    MARK SMITH
+                  </h3>
                   <h4 className='u-align-center-md u-align-center-sm u-align-center-xs u-heading-font u-text u-text-palette-1-base u-text-11'>
                     Constructor
                   </h4>

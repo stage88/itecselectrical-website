@@ -2,7 +2,8 @@ import React from 'react';
 import useSiteMetadata from '../hooks/useSiteMetadata';
 
 const Footer: React.FC = () => {
-  const { title, author, sourceUrl, authorUrl, abn, acn, actlic, nswlic, aspl2, austel, nswacc } = useSiteMetadata();
+  const { title, author, sourceUrl, authorUrl, abn, acn, actlic, nswlic, aspl2, austel, nswacc } =
+    useSiteMetadata();
 
   return (
     <section className='u-backlink u-clearfix u-grey-80'>
@@ -10,7 +11,8 @@ const Footer: React.FC = () => {
         <span>
           &copy; {new Date().getFullYear()} by {title}
         </span>
-        <br /><br />
+        <br />
+        <br />
         <span>
           ABN: {abn}, ACN: {acn}
         </span>

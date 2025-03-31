@@ -18,7 +18,9 @@ const Buy: React.FC = () => {
               </div>
               <div className='u-align-left-sm u-align-right-lg u-align-right-md u-align-right-xl u-align-right-xs u-container-style u-layout-cell u-right-cell u-similar-fill u-size-26 u-layout-cell-2'>
                 <div className='u-container-layout u-container-layout-2'>
-                  <a href='#' className='u-border-2 u-border-radius-4 u-border-white u-btn u-btn-round u-button-style u-custom u-btn-1'>
+                  <a
+                    href='#'
+                    className='u-border-2 u-border-radius-4 u-border-white u-btn u-btn-round u-button-style u-custom u-btn-1'>
                     purchase now
                   </a>
                 </div>

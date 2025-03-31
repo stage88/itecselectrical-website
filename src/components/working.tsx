@@ -2,7 +2,7 @@ import React from 'react';
 
 import PlanningStepIcon from '../components/icons/steps/planning';
 import DesignStepIcon from '../components/icons/steps/design';
-import BuildingStepIcon from '../components/icons/steps/building';
+// import BuildingStepIcon from '../components/icons/steps/building';
 import FinishStepIcon from '../components/icons/steps/finish';
 
 const Working: React.FC = () => {
@@ -42,7 +42,7 @@ const Working: React.FC = () => {
                 <div className='u-container-layout u-valign-middle u-container-layout-2'>
                   <DesignStepIcon />
 
-                  <h3 className='u-heading-font u-text u-text-3'>SAFETY SWITCH INSTALLATION (RCD'S AND RCBO'S)</h3>
+                  <h3 className='u-heading-font u-text u-text-3'>SAFETY SWITCH INSTALLATION (RCD&apos;S AND RCBO&apos;S)</h3>
                   <p className='u-text u-text-font u-text-4'>
                     The use of electrical appliances is an integral part of functioning in everyday life. Ensuring appliances function
                     correctly, efficiently and are free from fault is essential to reducing harm and severe injury to users. As a fully
@@ -89,13 +89,13 @@ const Working: React.FC = () => {
                     energy costs.
                   </p>
                   <p className='u-text u-text-font u-text-4'>
-                    We're always looking for new ideas and new ways to add value to our core business offerings. ITECS follows the 'Lighting
-                    in Future Environments' (LIFE) approach, which is designed to save you money and reduce carbon emissions over the whole
+                    We&apos;re always looking for new ideas and new ways to add value to our core business offerings. ITECS follows the &apos;Lighting
+                    in Future Environments&apos; (LIFE) approach, which is designed to save you money and reduce carbon emissions over the whole
                     life of your lighting installations. This is in-line with our objective as an environmental conscious, socially
                     responsible company.
                   </p>
                   <p className='u-text u-text-font u-text-4'>
-                    ITECS works with the world's leading 'Grade A' lighting manufacturers to offer the latest cutting-edge, energy efficient
+                    ITECS works with the world&apos;s leading &apos;Grade A&apos; lighting manufacturers to offer the latest cutting-edge, energy efficient
                     products and technology to our clients. Our commercial LED lighting offers a cost-effective and versatile option, not
                     only fulfilling general functional purposes, but also delivering stunning visual effects, while creating atmosphere and
                     influencing behavior and productivity.
@@ -109,7 +109,7 @@ const Working: React.FC = () => {
                   <PlanningStepIcon />
 
                   <h3 className='u-heading-font u-text u-text-3'>EXISTING HOMES WIRING, UPGRADES / REPAIRS</h3>
-                  <p className='u-text u-text-font u-text-4'>
+                  <span className='u-text u-text-font u-text-4'>
                     If your home is in need of an electrical upgrade or installation, look no further than ITECS Electrical Services. Some
                     of the services we specialize in include:
                     <ul style={{ listStyleType: 'none' }}>
@@ -123,7 +123,7 @@ const Working: React.FC = () => {
                       <li>Fault findings</li>
                       <li>Smoke detectors installation</li>
                     </ul>
-                  </p>
+                  </span>
                 </div>
               </div>
             </div>
@@ -133,7 +133,7 @@ const Working: React.FC = () => {
                   <DesignStepIcon />
 
                   <h3 className='u-heading-font u-text u-text-3'>ESSENTIAL ENERGY LEVEL - 2 ASP</h3>
-                  <p className='u-text u-text-font u-text-4'>
+                  <span className='u-text u-text-font u-text-4'>
                     Our Essential Energy Level-2 ASP services include:
                     <ul style={{ listStyleType: 'none' }}>
                       <li>Class 2A Disconnect & Reconnect</li>
@@ -144,7 +144,7 @@ const Working: React.FC = () => {
                       <li>Existing homes service mains upgrade</li>
                       <li>Removal of redundant off-peak meters and ripple controllers</li>
                     </ul>
-                  </p>
+                  </span>
                 </div>
               </div>
             </div>

@@ -1,9 +1,6 @@
 import React from 'react';
 import useSiteMetadata from '../hooks/useSiteMetadata';
 
-import img_world_map from '../images/world-map.png';
-import img_logo from '../images/itecs-logo.png';
-
 const Contact: React.FC = () => {
   const { companyName, constactEmail, mobile } = useSiteMetadata();
 
@@ -15,12 +12,18 @@ const Contact: React.FC = () => {
             <div className='u-layout-row'>
               <div className='u-align-center-md u-container-style u-expand-resize u-layout-cell u-left-cell u-similar-fill u-size-30 u-white u-layout-cell-1'>
                 <div className='u-container-layout u-valign-middle-md u-valign-middle-sm u-container-layout-1'>
-                  <img className='u-expanded-width-xs u-image u-image-1' src={img_world_map} />
+                  <img
+                    className='u-expanded-width-xs u-image u-image-1'
+                    src='/images/world-map.png'
+                    alt='World Map'
+                  />
                 </div>
               </div>
               <div className='u-container-style u-layout-cell u-right-cell u-similar-fill u-size-30 u-layout-cell-2'>
                 <div className='u-container-layout u-valign-middle'>
-                  <h3 className='u-heading-font u-text u-text-palette-1-base u-text-1' id='contact-us'>
+                  <h3
+                    className='u-heading-font u-text u-text-palette-1-base u-text-1'
+                    id='contact-us'>
                     Contact Us
                   </h3>
                   <h2 className='u-heading-font u-text u-text-2'>Our Contact Details</h2>
@@ -28,7 +31,8 @@ const Contact: React.FC = () => {
                   <p className='u-text u-text-font u-text-3'>
                     <img
                       className='u-image'
-                      src={img_logo}
+                      src='/images/itecs-logo.png'
+                      alt='Logo'
                       style={{ maxWidth: '200px', width: 'max-content' }}
                     />
                   </p>
@@ -45,8 +49,7 @@ const Contact: React.FC = () => {
                   </p>
                   <a
                     href={`mailto:${constactEmail}`}
-                    className='u-border-radius-4 u-btn u-btn-round u-button-style u-custom u-palette-1-base u-text-white u-btn-1'
-                  >
+                    className='u-border-radius-4 u-btn u-btn-round u-button-style u-custom u-palette-1-base u-text-white u-btn-1'>
                     {constactEmail}
                   </a>
                 </div>

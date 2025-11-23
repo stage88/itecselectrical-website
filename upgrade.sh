@@ -22,5 +22,5 @@ done
 
 ncu -u
 
-npm install --legacy-peer-deps
+npm install
 npm run build

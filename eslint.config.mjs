@@ -1,10 +1,11 @@
 import { defineConfig } from 'eslint/config'
+import { fixupConfigRules } from '@eslint/compat'
 import vitals from 'eslint-config-next/core-web-vitals'
 import typescript from 'eslint-config-next/typescript'
 
 const eslintConfig = defineConfig([
-  ...vitals,
-  ...typescript,
+  ...fixupConfigRules(vitals),
+  ...fixupConfigRules(typescript),
   {
     rules: {
       '@typescript-eslint/ban-ts-comment': 'warn',

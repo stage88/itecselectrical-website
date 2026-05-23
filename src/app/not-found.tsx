@@ -1,38 +1,32 @@
-import { Metadata } from 'next';
-import * as React from 'react';
+import React from 'react';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Not found',
+  title: 'Page not found — ITECS Electrical',
 };
 
 const NotFoundPage = () => {
   return (
-    <section className='u-clearfix u-white u-section-3' id='sec-4b72'>
-      <div className='u-clearfix u-sheet u-sheet-1'>
-        <div className='u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1'>
-          <div className='u-layout'>
-            <div className='u-layout-row'>
-              <div className='u-container-style u-layout-cell u-left-cell u-similar-fill u-size-30 u-layout-cell-1'>
-                <div className='u-container-layout u-container-layout-1'>
-                  <h3 className='u-heading-font u-text u-text-palette-1-base u-text-1'>
-                    Not found
-                  </h3>
-                  <h2 className='u-heading-font u-text u-text-2'>Page not found</h2>
-                  <div className='u-border-3 u-border-palette-1-base u-line u-line-horizontal u-line-1'></div>
-                  <p className='u-text u-text-font u-text-grey u-text-3'>
-                    Sorry&nbsp;
-                    <span role='img' aria-label='Pensive emoji'>
-                      😔
-                    </span>
-                    &nbsp; we couldn&apos;t find what you were looking for.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <main className='flex min-h-screen items-center justify-center bg-cream px-6 py-24 text-ink'>
+      <div className='mx-auto max-w-xl text-center'>
+        <p className='font-display text-sm font-semibold uppercase tracking-[0.22em] text-amber-600'>
+          404
+        </p>
+        <h1 className='mt-4 font-display text-5xl font-bold leading-[1.05] tracking-tight md:text-6xl'>
+          We couldn&apos;t find that page.
+        </h1>
+        <p className='mt-6 text-base leading-relaxed text-slate-700'>
+          The link may be old, or the page has moved. Head back to the homepage and you&apos;ll find
+          everything from there.
+        </p>
+        <a
+          href='/'
+          className='mt-10 inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3.5 text-sm font-semibold text-cream transition hover:bg-navy'
+        >
+          Back to homepage
+        </a>
       </div>
-    </section>
+    </main>
   );
 };
 

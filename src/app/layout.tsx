@@ -1,38 +1,126 @@
-/* eslint-disable @next/next/no-page-custom-font */
 import React from 'react';
+import type { Metadata } from 'next';
+import { Bricolage_Grotesque, Inter } from 'next/font/google';
 import { GoogleTagManager } from '@next/third-parties/google';
 
-import '../assets/scss/main.scss';
+import './globals.css';
 
-import Footer from '@/components/footer';
-import Header from '@/components/header';
-import Head from '@/components/head';
-import useSiteMetadata from '@/hooks/useSiteMetadata';
+import getSiteMetadata from '@/lib/site';
 
-const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const { gtmId } = useSiteMetadata();
+const bricolage = Bricolage_Grotesque({
+  subsets: ['latin'],
+  variable: '--font-bricolage',
+  display: 'swap',
+  weight: ['400', '500', '600', '700', '800'],
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+});
+
+const OG_IMAGE = '/images/og-image.png';
+
+export const metadata: Metadata = {
+  title: 'Electricians in Canberra & Queanbeyan · ITECS Electrical',
+  description:
+    'ITECS Electrical Services are leaders in providing quality electrical services for all kinds of residential, commercial, and rural projects. Servicing Canberra, Queanbeyan, and surrounding areas.',
+  metadataBase: new URL('https://itecselectrical.com.au'),
+  alternates: { canonical: '/' },
+  openGraph: {
+    title: 'ITECS Electrical Services',
+    description:
+      'Leaders in quality electrical work since 1993. Level-2 ASP authorised. Canberra · Queanbeyan · ACT + NSW.',
+    type: 'website',
+    url: 'https://itecselectrical.com.au',
+    locale: 'en_AU',
+    siteName: 'ITECS Electrical Services',
+    images: [
+      {
+        url: OG_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: 'ITECS Electrical Services Pty Ltd',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'ITECS Electrical Services',
+    description:
+      'Leaders in quality electrical work since 1993. Level-2 ASP authorised.',
+    images: [OG_IMAGE],
+    creator: 'Sam Ilic',
+  },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
+};
+
+const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const site = getSiteMetadata();
+  const { gtmId, companyName, mobile, constactEmail, siteUrl, abn, foundingYear } = site;
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Electrician',
+    name: companyName,
+    description:
+      'Licensed electrical contractor servicing Canberra, Queanbeyan and surrounding areas — residential, commercial, rural, Level-2 ASP.',
+    url: siteUrl,
+    telephone: mobile,
+    email: constactEmail,
+    image: `${siteUrl}${OG_IMAGE.replace(/^\//, '')}`,
+    logo: `${siteUrl}images/itecs-logo-l.png`,
+    foundingDate: String(foundingYear),
+    identifier: `ABN ${abn}`,
+    address: {
+      '@type': 'PostalAddress',
+      postOfficeBoxNumber: '1295',
+      addressLocality: 'Queanbeyan',
+      addressRegion: 'NSW',
+      postalCode: '2620',
+      addressCountry: 'AU',
+    },
+    areaServed: [
+      { '@type': 'City', name: 'Canberra' },
+      { '@type': 'City', name: 'Queanbeyan' },
+    ],
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Electrical services',
+      itemListElement: [
+        'Commercial fit-outs',
+        'Residential rewires',
+        'Level-2 ASP',
+        'Safety & testing',
+        'Lighting design',
+        'Outdoor & pool',
+        'Maintenance & repairs',
+        'Switchboard & meter board upgrades',
+        "Safety switches — RCD's & RCBO's",
+      ].map((name) => ({
+        '@type': 'Offer',
+        itemOffered: { '@type': 'Service', name },
+      })),
+    },
+    sameAs: ['https://www.facebook.com/itecselectrical/'],
+  };
 
   return (
-    <html suppressHydrationWarning={true} lang='en'>
-      <head>
-        <Head />
-
-        <link
-          rel='stylesheet'
-          href='https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=optional'
-        />
-      </head>
+    <html suppressHydrationWarning={true} lang='en' className={`${bricolage.variable} ${inter.variable}`}>
       <GoogleTagManager gtmId={gtmId} />
-
-      <body>
-        <section className='u-backlink-hidden u-body'>
-          <Header />
-          {children}
-          <Footer />
-        </section>
+      <body className='font-sans antialiased'>
+        {children}
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   );
 };
 
-export default Layout;
+export default RootLayout;

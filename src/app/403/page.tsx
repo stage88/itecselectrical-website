@@ -1,38 +1,31 @@
-import { Metadata } from 'next';
-import * as React from 'react';
+import React from 'react';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Access Denied',
+  title: 'Access denied — ITECS Electrical',
 };
 
 const AccessDeniedPage = () => {
   return (
-    <section className='u-clearfix u-white u-section-3' id='sec-4b72'>
-      <div className='u-clearfix u-sheet u-sheet-1'>
-        <div className='u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1'>
-          <div className='u-layout'>
-            <div className='u-layout-row'>
-              <div className='u-container-style u-layout-cell u-left-cell u-similar-fill u-size-30 u-layout-cell-1'>
-                <div className='u-container-layout u-container-layout-1'>
-                  <h3 className='u-heading-font u-text u-text-palette-1-base u-text-1'>
-                    Access Denied
-                  </h3>
-                  <h2 className='u-heading-font u-text u-text-2'>Access Denied</h2>
-                  <div className='u-border-3 u-border-palette-1-base u-line u-line-horizontal u-line-1'></div>
-                  <p className='u-text u-text-font u-text-grey u-text-3'>
-                    Sorry&nbsp;
-                    <span role='img' aria-label='Pensive emoji'>
-                      😔
-                    </span>
-                    &nbsp; you don&apos;t have access to the requested resource.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <main className='flex min-h-screen items-center justify-center bg-cream px-6 py-24 text-ink'>
+      <div className='mx-auto max-w-xl text-center'>
+        <p className='font-display text-sm font-semibold uppercase tracking-[0.22em] text-amber-600'>
+          403
+        </p>
+        <h1 className='mt-4 font-display text-5xl font-bold leading-[1.05] tracking-tight md:text-6xl'>
+          Access denied.
+        </h1>
+        <p className='mt-6 text-base leading-relaxed text-slate-700'>
+          You don&apos;t have access to the requested resource.
+        </p>
+        <a
+          href='/'
+          className='mt-10 inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3.5 text-sm font-semibold text-cream transition hover:bg-navy'
+        >
+          Back to homepage
+        </a>
       </div>
-    </section>
+    </main>
   );
 };
 

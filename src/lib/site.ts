@@ -1,4 +1,4 @@
-type Props = {
+type SiteMetadata = {
   title: string;
   name: string;
   companyName: string;
@@ -20,10 +20,16 @@ type Props = {
   austel: string;
   nswacc: string;
   gtmId: string;
+  foundingYear: number;
+  yearsOnTheTools: number;
 };
 
-const useSiteMetadata = (): Props => {
+const FOUNDING_YEAR = 1993;
+
+const getSiteMetadata = (): SiteMetadata => {
   return {
+    foundingYear: FOUNDING_YEAR,
+    yearsOnTheTools: new Date().getFullYear() - FOUNDING_YEAR,
     title: 'ITECS Electrical - Quality electrical services for Canberra, Queanbeyan, and surrounding areas',
     name: 'ITECS Electrical Services',
     companyName: 'ITECS Electrical Services Pty Ltd',
@@ -49,4 +55,4 @@ const useSiteMetadata = (): Props => {
   };
 };
 
-export default useSiteMetadata;
+export default getSiteMetadata;

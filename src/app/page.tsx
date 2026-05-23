@@ -156,7 +156,7 @@ const HomePage = () => {
         </div>
 
         <div className='relative border-t border-cream/10 bg-navy-900/40'>
-          <div className='mx-auto grid max-w-7xl grid-cols-2 place-items-center gap-x-6 gap-y-3 px-6 py-5 text-xs uppercase tracking-[0.2em] text-cream/55 sm:grid-cols-3 lg:grid-cols-6'>
+          <div className='mx-auto grid max-w-7xl grid-cols-1 place-items-center gap-x-6 gap-y-3 px-6 py-5 text-xs uppercase tracking-[0.2em] text-cream/55 sm:grid-cols-3 lg:grid-cols-6'>
             <span>Switchboard upgrades</span>
             <span>Commercial fit-outs</span>
             <span>Residential rewires</span>
@@ -215,17 +215,15 @@ const HomePage = () => {
                 to finish — leaving you with the peace of mind of a job well done.
               </p>
 
-              <div className='mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-line/8 pt-8'>
+              <div className='mt-10 grid grid-cols-1 gap-x-8 gap-y-5 border-t border-line/8 pt-8 sm:grid-cols-3'>
                 <div>
                   <p className='font-display text-3xl font-bold tracking-tight'>{foundingYear}</p>
                   <p className='text-xs uppercase tracking-wider text-fg-subtle'>Established</p>
                 </div>
-                <div className='h-10 w-px bg-line/8' aria-hidden />
                 <div>
                   <p className='font-display text-3xl font-bold tracking-tight'>ACT + NSW</p>
                   <p className='text-xs uppercase tracking-wider text-fg-subtle'>Licensed</p>
                 </div>
-                <div className='h-10 w-px bg-line/8' aria-hidden />
                 <div>
                   <p className='font-display text-3xl font-bold tracking-tight'>L-2 ASP</p>
                   <p className='text-xs uppercase tracking-wider text-fg-subtle'>Essential Energy</p>

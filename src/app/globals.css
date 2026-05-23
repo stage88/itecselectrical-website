@@ -1,6 +1,10 @@
 @import 'tailwindcss';
 
+/* Manual dark variant — flipped by a `.dark` class on <html>. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
+  /* Brand literals — unchanged across themes. */
   --color-ink: #0b1220;
   --color-navy: #1b2b57;
   --color-navy-700: #15224a;
@@ -13,17 +17,37 @@
   --color-slate-700: #2a3344;
   --color-slate-500: #5b6479;
 
+  /* Semantic / theme-aware tokens. Light defaults; .dark overrides below. */
+  --color-canvas: #f7f4ee;
+  --color-fg: #0b1220;
+  --color-surface: #ffffff;
+  --color-fg-muted: #2a3344;
+  --color-fg-subtle: #5b6479;
+  --color-line: #0b1220;
+
   --font-display: var(--font-bricolage), ui-serif, Georgia, serif;
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 
   --radius-card: 1.25rem;
 }
 
+/* Dark-mode token overrides. Brand literals (cream, ink, navy, amber) are
+   kept intentionally — they're used as always-light text on dark sections
+   and as button bg, regardless of theme. */
+.dark {
+  --color-canvas: #0c1322;
+  --color-fg: #f0ece4;
+  --color-surface: #131b30;
+  --color-fg-muted: #c9cfdd;
+  --color-fg-subtle: #8a93a8;
+  --color-line: #f0ece4;
+}
+
 @layer base {
   html,
   body {
-    background: var(--color-cream);
-    color: var(--color-ink);
+    background: var(--color-canvas);
+    color: var(--color-fg);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;

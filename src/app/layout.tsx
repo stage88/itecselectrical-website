@@ -5,7 +5,12 @@ import { GoogleTagManager } from '@next/third-parties/google';
 
 import './globals.css';
 
+import { ThemeProvider } from '@/components/theme-provider';
 import getSiteMetadata from '@/lib/site';
+
+// Runs synchronously during HTML parsing — sets the theme class on <html>
+// before any content paints, eliminating the flash of the wrong theme.
+const themeInitScript = `(function(){try{var k='itecs-ui-theme';var t=localStorage.getItem(k);var s=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';var c=(t==='dark'||t==='light')?t:s;document.documentElement.classList.add(c);}catch(e){}})();`;
 
 const bricolage = Bricolage_Grotesque({
   subsets: ['latin'],
@@ -113,7 +118,8 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     <html suppressHydrationWarning={true} lang='en' className={`${bricolage.variable} ${inter.variable}`}>
       <GoogleTagManager gtmId={gtmId} />
       <body className='font-sans antialiased'>
-        {children}
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        <ThemeProvider>{children}</ThemeProvider>
         <script
           type='application/ld+json'
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

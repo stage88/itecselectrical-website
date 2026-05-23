@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
+import ModeToggle from '@/components/mode-toggle';
 import getSiteMetadata from '@/lib/site';
 import MobileNav from './_mobile-nav';
 
@@ -26,9 +27,9 @@ const HomePage = () => {
   const telHref = `tel:${mobile.replace(/\s+/g, '')}`;
 
   return (
-    <main className='min-h-screen bg-cream text-ink'>
+    <main className='min-h-screen bg-canvas text-fg'>
       {/* ──────────────  NAV  ────────────── */}
-      <header className='sticky top-0 z-50 backdrop-blur-md bg-cream/85 border-b border-ink/5'>
+      <header className='sticky top-0 z-50 backdrop-blur-md bg-canvas/85 border-b border-line/5'>
         <div className='mx-auto flex max-w-7xl items-center gap-3 px-4 py-4 sm:gap-6 sm:px-6 md:gap-10'>
           <a href='#top' className='flex items-center gap-3'>
             <span className='inline-flex h-9 w-9 items-center justify-center rounded-md bg-navy text-amber'>
@@ -36,13 +37,14 @@ const HomePage = () => {
             </span>
             <span className='font-display text-lg font-bold tracking-tight'>ITECS</span>
           </a>
-          <nav className='hidden items-center gap-9 text-base font-medium text-slate-700 md:flex'>
-            <a href='#services' className='hover:text-ink transition'>Services</a>
-            <a href='#projects' className='hover:text-ink transition'>Projects</a>
-            <a href='#about' className='hover:text-ink transition'>About</a>
-            <a href='#contact' className='hover:text-ink transition'>Contact</a>
+          <nav className='hidden items-center gap-9 text-base font-medium text-fg-muted md:flex'>
+            <a href='#services' className='hover:text-fg transition'>Services</a>
+            <a href='#projects' className='hover:text-fg transition'>Projects</a>
+            <a href='#about' className='hover:text-fg transition'>About</a>
+            <a href='#contact' className='hover:text-fg transition'>Contact</a>
           </nav>
           <div className='ml-auto flex items-center gap-2'>
+            <ModeToggle className='hidden sm:inline-flex' />
             <a
               href={telHref}
               aria-label={`Call ${mobile}`}
@@ -62,7 +64,7 @@ const HomePage = () => {
           <GridPattern />
         </div>
         <div
-          className='absolute -right-40 top-1/2 h-[600px] w-[600px] -translate-y-1/2 rounded-full bg-amber/20 blur-3xl'
+          className='absolute -right-40 top-1/2 h-150 w-150 -translate-y-1/2 rounded-full bg-amber/20 blur-3xl'
           aria-hidden
         />
 
@@ -137,7 +139,7 @@ const HomePage = () => {
           <div className='hidden lg:col-span-5 lg:block' aria-hidden />
 
           {/* figure pinned flush with the bottom of the hero (above the marquee strip) */}
-          <div className='pointer-events-none absolute bottom-0 right-0 hidden h-[92%] w-[44%] max-w-[640px] lg:block'>
+          <div className='pointer-events-none absolute bottom-0 right-0 hidden h-[92%] w-[44%] max-w-160 lg:block'>
             <div
               className='absolute inset-x-8 bottom-12 z-0 h-2/3 rounded-[40%] bg-amber/30 blur-3xl'
               aria-hidden
@@ -187,15 +189,15 @@ const HomePage = () => {
                   <span className='mt-1 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-amber/15 text-amber-600'>
                     <CheckIcon className='h-3 w-3' />
                   </span>
-                  <span className='text-base leading-relaxed text-slate-700'>{bullet}</span>
+                  <span className='text-base leading-relaxed text-fg-muted'>{bullet}</span>
                 </li>
               ))}
             </ul>
           </div>
 
           <div className='lg:col-span-7'>
-            <div className='rounded-card border border-ink/8 bg-paper p-8 lg:p-12'>
-              <p className='text-base leading-relaxed text-slate-700'>
+            <div className='rounded-card border border-line/8 bg-surface p-8 lg:p-12'>
+              <p className='text-base leading-relaxed text-fg-muted'>
                 {companyName} is a Canberra and Queanbeyan operated business established in{' '}
                 {foundingYear}. We
                 provide services for commercial, industrial, rural and domestic electrical repairs,
@@ -203,30 +205,30 @@ const HomePage = () => {
                 surrounding areas. We also provide security surveillance, data and telephone
                 services.
               </p>
-              <p className='mt-5 text-base leading-relaxed text-slate-700'>
-                ITECS is <span className='font-semibold text-ink'>Level-2 authorised</span> with
+              <p className='mt-5 text-base leading-relaxed text-fg-muted'>
+                ITECS is <span className='font-semibold text-fg'>Level-2 authorised</span> with
                 Essential Energy, providing metering and underground connections to the premises.
                 All our work is guaranteed and complies with the latest Australian Standards.
               </p>
-              <p className='mt-5 text-base leading-relaxed text-slate-700'>
+              <p className='mt-5 text-base leading-relaxed text-fg-muted'>
                 We pride ourselves on completing jobs quickly, efficiently and seamlessly from start
                 to finish — leaving you with the peace of mind of a job well done.
               </p>
 
-              <div className='mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-ink/8 pt-8'>
+              <div className='mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-line/8 pt-8'>
                 <div>
                   <p className='font-display text-3xl font-bold tracking-tight'>{foundingYear}</p>
-                  <p className='text-xs uppercase tracking-wider text-slate-500'>Established</p>
+                  <p className='text-xs uppercase tracking-wider text-fg-subtle'>Established</p>
                 </div>
-                <div className='h-10 w-px bg-ink/8' aria-hidden />
+                <div className='h-10 w-px bg-line/8' aria-hidden />
                 <div>
                   <p className='font-display text-3xl font-bold tracking-tight'>ACT + NSW</p>
-                  <p className='text-xs uppercase tracking-wider text-slate-500'>Licensed</p>
+                  <p className='text-xs uppercase tracking-wider text-fg-subtle'>Licensed</p>
                 </div>
-                <div className='h-10 w-px bg-ink/8' aria-hidden />
+                <div className='h-10 w-px bg-line/8' aria-hidden />
                 <div>
                   <p className='font-display text-3xl font-bold tracking-tight'>L-2 ASP</p>
-                  <p className='text-xs uppercase tracking-wider text-slate-500'>Essential Energy</p>
+                  <p className='text-xs uppercase tracking-wider text-fg-subtle'>Essential Energy</p>
                 </div>
               </div>
             </div>
@@ -235,7 +237,7 @@ const HomePage = () => {
       </section>
 
       {/* ──────────────  SERVICES  ────────────── */}
-      <section id='services' className='relative bg-paper px-6 py-24 lg:py-32'>
+      <section id='services' className='relative bg-surface px-6 py-24 lg:py-32'>
         <div className='mx-auto max-w-7xl'>
           <div className='flex flex-col items-start justify-between gap-6 md:flex-row md:items-end'>
             <div>
@@ -248,16 +250,16 @@ const HomePage = () => {
             </div>
             <a
               href='#contact'
-              className='hidden shrink-0 items-center gap-2 text-sm font-semibold text-ink underline decoration-amber decoration-[3px] underline-offset-[6px] hover:decoration-ink md:inline-flex'
+              className='hidden shrink-0 items-center gap-2 text-sm font-semibold text-fg underline decoration-amber decoration-[3px] underline-offset-[6px] hover:decoration-ink md:inline-flex'
             >
               Get in touch
               <ArrowIcon className='h-4 w-4' />
             </a>
           </div>
 
-          <article className='group relative mt-14 grid overflow-hidden rounded-card border border-ink/8 bg-cream shadow-[0_30px_80px_-40px_rgba(11,18,32,0.25)] lg:grid-cols-12'>
+          <article className='group relative mt-14 grid overflow-hidden rounded-card border border-line/8 bg-canvas shadow-[0_30px_80px_-40px_rgba(11,18,32,0.25)] lg:grid-cols-12'>
             <div className='relative lg:col-span-6'>
-              <div className='relative aspect-[5/4] w-full lg:aspect-auto lg:h-full'>
+              <div className='relative aspect-5/4 w-full lg:aspect-auto lg:h-full'>
                 <Image
                   src='/images/indoor-3.png'
                   alt='Commercial fit-out by ITECS Electrical, Canberra'
@@ -265,7 +267,7 @@ const HomePage = () => {
                   sizes='(min-width: 1024px) 50vw, 100vw'
                   className='object-cover'
                 />
-                <div className='absolute inset-0 bg-gradient-to-tr from-navy/55 via-navy/10 to-transparent' />
+                <div className='absolute inset-0 bg-linear-to-tr from-navy/55 via-navy/10 to-transparent' />
                 <span className='absolute left-6 top-6 inline-flex items-center gap-2 rounded-full bg-cream/95 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-ink'>
                   <span className='h-1.5 w-1.5 rounded-full bg-amber' />
                   Featured
@@ -278,14 +280,14 @@ const HomePage = () => {
                   <span className='inline-flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-amber'>
                     <BoltIcon className='h-6 w-6' />
                   </span>
-                  <span className='font-display text-lg text-slate-500'>
-                    <span className='tabular-nums text-ink/30'>/</span> 01
+                  <span className='font-display text-lg text-fg-subtle'>
+                    <span className='tabular-nums text-fg/30'>/</span> 01
                   </span>
                 </div>
                 <h3 className='mt-6 font-display text-3xl font-bold leading-tight tracking-tight md:text-4xl'>
                   Commercial fit-outs
                 </h3>
-                <p className='mt-5 text-base leading-relaxed text-slate-700'>
+                <p className='mt-5 text-base leading-relaxed text-fg-muted'>
                   Shop, café and restaurant fit-outs through Canberra and Queanbeyan — full wiring,
                   switchboards, pendant and track lighting, exit and emergency, refrigeration and
                   cooking-appliance install. We design the power distribution to suit your site.
@@ -297,20 +299,20 @@ const HomePage = () => {
                     'Exit + emergency systems',
                     'Refrigeration & appliance install',
                   ].map((item) => (
-                    <li key={item} className='flex items-start gap-2.5 text-sm text-slate-700'>
+                    <li key={item} className='flex items-start gap-2.5 text-sm text-fg-muted'>
                       <CheckIcon className='mt-0.5 h-4 w-4 shrink-0 text-amber-600' />
                       {item}
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className='flex items-center justify-between gap-4 border-t border-ink/8 pt-6'>
-                <span className='text-xs uppercase tracking-wider text-slate-500'>
+              <div className='flex items-center justify-between gap-4 border-t border-line/8 pt-6'>
+                <span className='text-xs uppercase tracking-wider text-fg-subtle'>
                   AS/NZS&nbsp;3000 compliant
                 </span>
                 <a
                   href='#contact'
-                  className='inline-flex items-center gap-2 text-sm font-semibold text-ink transition group-hover:gap-3'
+                  className='inline-flex items-center gap-2 text-sm font-semibold text-fg transition group-hover:gap-3'
                 >
                   Enquire
                   <ArrowIcon className='h-4 w-4 transition group-hover:translate-x-1' />
@@ -361,19 +363,19 @@ const HomePage = () => {
               <a
                 key={n}
                 href='#contact'
-                className='group relative flex flex-col gap-6 rounded-card border border-ink/8 bg-paper p-7 transition hover:border-amber hover:shadow-[0_20px_50px_-30px_rgba(11,18,32,0.3)]'
+                className='group relative flex flex-col gap-6 rounded-card border border-line/8 bg-surface p-7 transition hover:border-amber hover:shadow-[0_20px_50px_-30px_rgba(11,18,32,0.3)]'
               >
                 <div className='flex items-center justify-between'>
                   <span className='inline-flex h-11 w-11 items-center justify-center rounded-lg bg-cream text-navy transition group-hover:bg-navy group-hover:text-amber'>
                     <Icon className='h-5 w-5' />
                   </span>
-                  <span className='font-display text-sm tabular-nums text-slate-500'>{n}</span>
+                  <span className='font-display text-sm tabular-nums text-fg-subtle'>{n}</span>
                 </div>
                 <div>
                   <h4 className='font-display text-xl font-bold tracking-tight'>{title}</h4>
-                  <p className='mt-3 text-sm leading-relaxed text-slate-700'>{body}</p>
+                  <p className='mt-3 text-sm leading-relaxed text-fg-muted'>{body}</p>
                 </div>
-                <span className='inline-flex items-center gap-1.5 text-sm font-semibold text-ink transition group-hover:gap-2.5'>
+                <span className='inline-flex items-center gap-1.5 text-sm font-semibold text-fg transition group-hover:gap-2.5'>
                   Enquire
                   <ArrowIcon className='h-3.5 w-3.5 transition group-hover:translate-x-1' />
                 </span>
@@ -425,7 +427,7 @@ const HomePage = () => {
                   sizes='(min-width: 768px) 25vw, 50vw'
                   className='object-cover transition duration-700 group-hover:scale-105'
                 />
-                <div className='absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/10 to-transparent opacity-90 transition group-hover:opacity-70' />
+                <div className='absolute inset-0 bg-linear-to-t from-ink/85 via-ink/10 to-transparent opacity-90 transition group-hover:opacity-70' />
                 <figcaption className='absolute bottom-3 left-3 right-3 flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-cream/95'>
                   <span className='h-1 w-1 rounded-full bg-amber' />
                   {tag}
@@ -437,7 +439,7 @@ const HomePage = () => {
       </section>
 
       {/* ──────────────  MORE SERVICES (long-form)  ────────────── */}
-      <section className='relative bg-cream px-6 py-24 lg:py-32'>
+      <section className='relative bg-canvas px-6 py-24 lg:py-32'>
         <div className='mx-auto max-w-7xl'>
           <p className='text-xs font-semibold uppercase tracking-[0.22em] text-amber-600'>
             03 — More capabilities
@@ -478,7 +480,7 @@ const HomePage = () => {
                 }`}
               >
                 <div className='relative overflow-hidden rounded-card lg:col-span-6'>
-                  <div className='relative aspect-[5/4]'>
+                  <div className='relative aspect-5/4'>
                     <Image
                       src={image}
                       alt={`${title} — ITECS Electrical, Canberra & Queanbeyan`}
@@ -486,7 +488,7 @@ const HomePage = () => {
                       sizes='(min-width: 1024px) 50vw, 100vw'
                       className='object-cover'
                     />
-                    <div className='absolute inset-0 bg-gradient-to-tr from-navy/40 via-transparent to-transparent' />
+                    <div className='absolute inset-0 bg-linear-to-tr from-navy/40 via-transparent to-transparent' />
                   </div>
                 </div>
                 <div className='lg:col-span-6'>
@@ -494,10 +496,10 @@ const HomePage = () => {
                   <h3 className='mt-3 font-display text-3xl font-bold leading-tight tracking-tight md:text-4xl'>
                     {title}
                   </h3>
-                  <p className='mt-6 text-base leading-relaxed text-slate-700'>{body}</p>
+                  <p className='mt-6 text-base leading-relaxed text-fg-muted'>{body}</p>
                   <ul className='mt-7 space-y-3'>
                     {bullets.map((b) => (
-                      <li key={b} className='flex items-start gap-3 text-sm text-slate-700'>
+                      <li key={b} className='flex items-start gap-3 text-sm text-fg-muted'>
                         <span className='mt-1 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-amber/15 text-amber-600'>
                           <CheckIcon className='h-3 w-3' />
                         </span>
@@ -512,17 +514,17 @@ const HomePage = () => {
 
           {/* Existing homes + Level-2 ASP, condensed */}
           <div className='mt-20 grid gap-6 lg:mt-28 lg:grid-cols-2'>
-            <article className='rounded-card border border-ink/8 bg-paper p-8 lg:p-10'>
+            <article className='rounded-card border border-line/8 bg-surface p-8 lg:p-10'>
               <div className='flex items-center gap-4'>
                 <span className='inline-flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-amber'>
                   <HouseIcon className='h-6 w-6' />
                 </span>
-                <span className='font-display text-sm tabular-nums text-slate-500'>04</span>
+                <span className='font-display text-sm tabular-nums text-fg-subtle'>04</span>
               </div>
               <h3 className='mt-6 font-display text-2xl font-bold leading-tight tracking-tight md:text-3xl'>
                 Existing homes — wiring, upgrades, repairs
               </h3>
-              <ul className='mt-6 grid gap-2.5 text-sm text-slate-700 sm:grid-cols-2'>
+              <ul className='mt-6 grid gap-2.5 text-sm text-fg-muted sm:grid-cols-2'>
                 {[
                   'Electrical repairs',
                   'Rewiring & installations',
@@ -542,17 +544,17 @@ const HomePage = () => {
               </ul>
             </article>
 
-            <article className='rounded-card border border-ink/8 bg-paper p-8 lg:p-10'>
+            <article className='rounded-card border border-line/8 bg-surface p-8 lg:p-10'>
               <div className='flex items-center gap-4'>
                 <span className='inline-flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-amber'>
                   <PoleIcon className='h-6 w-6' />
                 </span>
-                <span className='font-display text-sm tabular-nums text-slate-500'>05</span>
+                <span className='font-display text-sm tabular-nums text-fg-subtle'>05</span>
               </div>
               <h3 className='mt-6 font-display text-2xl font-bold leading-tight tracking-tight md:text-3xl'>
                 Essential Energy Level-2 ASP
               </h3>
-              <ul className='mt-6 grid gap-2.5 text-sm text-slate-700 sm:grid-cols-2'>
+              <ul className='mt-6 grid gap-2.5 text-sm text-fg-muted sm:grid-cols-2'>
                 {[
                   'Class 2A disconnect & reconnect',
                   'Class 2B underground service mains',
@@ -580,7 +582,7 @@ const HomePage = () => {
           <GridPattern />
         </div>
         <div
-          className='absolute -left-40 top-1/2 h-[500px] w-[500px] -translate-y-1/2 rounded-full bg-amber/15 blur-3xl'
+          className='absolute -left-40 top-1/2 h-125 w-125 -translate-y-1/2 rounded-full bg-amber/15 blur-3xl'
           aria-hidden
         />
         <div className='relative mx-auto grid max-w-7xl gap-14 lg:grid-cols-12 lg:gap-16'>
@@ -588,7 +590,7 @@ const HomePage = () => {
             <p className='text-xs font-semibold uppercase tracking-[0.22em] text-amber'>
               04 — Get in touch
             </p>
-            <h2 className='mt-4 font-display text-[clamp(2.25rem,5vw,4rem)] font-bold leading-[1.0] tracking-tight'>
+            <h2 className='mt-4 font-display text-[clamp(2.25rem,5vw,4rem)] font-bold leading-none tracking-tight'>
               Got a job? Let&apos;s talk it through.
             </h2>
             <p className='mt-8 max-w-xl text-lg leading-relaxed text-cream/75'>
@@ -615,7 +617,7 @@ const HomePage = () => {
           </div>
 
           <div className='lg:col-span-5'>
-            <div className='rounded-card border border-cream/12 bg-cream/[0.04] p-8 backdrop-blur-sm lg:p-10'>
+            <div className='rounded-card border border-cream/12 bg-cream/4 p-8 backdrop-blur-sm lg:p-10'>
               <dl className='space-y-7'>
                 <div>
                   <dt className='text-xs uppercase tracking-[0.18em] text-cream/55'>Phone</dt>
@@ -656,7 +658,7 @@ const HomePage = () => {
       </section>
 
       {/* ──────────────  FOOTER  ────────────── */}
-      <footer className='border-t border-ink/8 bg-cream px-6 py-14'>
+      <footer className='border-t border-line/8 bg-canvas px-6 py-14'>
         <div className='mx-auto max-w-7xl'>
           <div className='flex flex-col items-start justify-between gap-10 md:flex-row md:items-center'>
             <a href='#top' className='flex items-center gap-3'>
@@ -667,20 +669,20 @@ const HomePage = () => {
                 <span className='block font-display text-lg font-bold leading-none tracking-tight'>
                   ITECS
                 </span>
-                <span className='block text-xs uppercase tracking-[0.18em] text-slate-500'>
+                <span className='block text-xs uppercase tracking-[0.18em] text-fg-subtle'>
                   Electrical Services
                 </span>
               </span>
             </a>
-            <nav className='flex flex-wrap gap-x-8 gap-y-3 text-sm font-medium text-slate-700'>
-              <a href='#about' className='hover:text-ink'>About</a>
-              <a href='#services' className='hover:text-ink'>Services</a>
-              <a href='#projects' className='hover:text-ink'>Projects</a>
-              <a href='#contact' className='hover:text-ink'>Contact</a>
+            <nav className='flex flex-wrap gap-x-8 gap-y-3 text-sm font-medium text-fg-muted'>
+              <a href='#about' className='hover:text-fg'>About</a>
+              <a href='#services' className='hover:text-fg'>Services</a>
+              <a href='#projects' className='hover:text-fg'>Projects</a>
+              <a href='#contact' className='hover:text-fg'>Contact</a>
             </nav>
           </div>
 
-          <dl className='mt-12 grid grid-cols-2 gap-x-6 gap-y-5 border-t border-ink/8 pt-10 text-xs sm:grid-cols-3 lg:grid-cols-6'>
+          <dl className='mt-12 grid grid-cols-2 gap-x-6 gap-y-5 border-t border-line/8 pt-10 text-xs sm:grid-cols-3 lg:grid-cols-6'>
             {[
               ['ABN', abn],
               ['ACN', acn],
@@ -691,13 +693,13 @@ const HomePage = () => {
               ['NSW accreditation', nswacc],
             ].map(([k, v]) => (
               <div key={k}>
-                <dt className='font-semibold uppercase tracking-[0.16em] text-slate-500'>{k}</dt>
-                <dd className='mt-1.5 font-mono tabular-nums text-ink'>{v}</dd>
+                <dt className='font-semibold uppercase tracking-[0.16em] text-fg-subtle'>{k}</dt>
+                <dd className='mt-1.5 font-mono tabular-nums text-fg'>{v}</dd>
               </div>
             ))}
           </dl>
 
-          <div className='mt-10 flex flex-col gap-3 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between'>
+          <div className='mt-10 flex flex-col gap-3 text-xs text-fg-subtle sm:flex-row sm:items-center sm:justify-between'>
             <p>
               &copy; {new Date().getFullYear()} {companyName}. All rights reserved.
             </p>
@@ -706,7 +708,7 @@ const HomePage = () => {
                 href={sourceUrl}
                 target='_blank'
                 rel='noreferrer'
-                className='underline decoration-amber decoration-2 underline-offset-4 hover:text-ink'
+                className='underline decoration-amber decoration-2 underline-offset-4 hover:text-fg'
               >
                 Theme
               </a>{' '}
@@ -715,7 +717,7 @@ const HomePage = () => {
                 href={authorUrl}
                 target='_blank'
                 rel='noreferrer'
-                className='underline decoration-amber decoration-2 underline-offset-4 hover:text-ink'
+                className='underline decoration-amber decoration-2 underline-offset-4 hover:text-fg'
               >
                 {author}
               </a>

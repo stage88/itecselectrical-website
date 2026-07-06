@@ -46,10 +46,11 @@
 @layer base {
   html,
   body {
-    background: var(--color-canvas);
-    color: var(--color-fg);
+    background: var(--color-navy);
+    color: var(--color-cream);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    overscroll-behavior: none;
   }
 }

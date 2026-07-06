@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Bricolage_Grotesque, Inter } from 'next/font/google';
 import { GoogleTagManager } from '@next/third-parties/google';
 
@@ -37,6 +37,12 @@ export const metadata: Metadata = {
     icon: '/favicon.ico',
     apple: '/favicon.ico',
   },
+};
+
+// Navy tints the mobile browser chrome (status bar / toolbar) so it matches
+// the full-bleed notice instead of showing a white band top and bottom.
+export const viewport: Viewport = {
+  themeColor: '#1b2b57',
 };
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {

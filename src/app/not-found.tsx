@@ -17,8 +17,7 @@ const NotFoundPage = () => {
           We couldn&apos;t find that page.
         </h1>
         <p className='mt-6 text-base leading-relaxed text-fg-muted'>
-          The link may be old, or the page has moved. Head back to the homepage and you&apos;ll find
-          everything from there.
+          ITECS Electrical Services is no longer operating.
         </p>
         <Link
           href='/'
